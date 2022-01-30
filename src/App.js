@@ -4,6 +4,8 @@ import { Switch, Route, Link } from 'react-router-dom';
 import { Layout, Typography, Space } from 'antd';
 import { Navbar, Home, Exchanges, Cryptocurrencies, CryptoDetails, News } from './Components';
 import './App.css'
+import { BorderBottomOutlined } from '@ant-design/icons/lib/icons';
+
 
 const App = () => {
     return (
@@ -34,8 +36,17 @@ const App = () => {
                     </div>
                 </Layout>
                 <div className='footer' level={5} >
+                    <Link to="/">
+                        <div className='pb-2' style={{paddingBottom:"4px"}}>
+                            <div className="wrap_c">
+                                <div className="outer_c"></div>
+                                <div className="inner_c"></div>
+                            </div>
+                            {/* <h2 className='logo'>Cryptoverse</h2> */}
+                        </div>
+                    </Link>
                     <Typography style={{ color: "#fff", textAlign: "center" }}>
-                        Cryptoverse <br />
+                        {/* Cryptoverse <br /> */}
                         All rights reserved
                     </Typography>
                     <Space>
