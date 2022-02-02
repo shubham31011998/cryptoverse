@@ -1,0 +1,77 @@
+
+ .wrap_c{
+     display:flex;
+     justify-content:center;
+     align-items: center;
+     justify-content: center;
+ }
+ .body_loader .logo-container {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     flex-wrap: nowrap;
+     width: 100%;
+     height: 100%;
+ }
+ .body_loader {
+    width: 100%;
+    display: flex;
+    height: calc(100vh - 162px);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+ .logo-container h2{
+     margin: 0 0 0 4px ;
+     color: rgba(255, 255, 255, 0.50);
+ }
+   /* .wrap_c:hover{
+     animation: spin 4s linear infinite; 
+   } */
+     
+   .body_loader .outer_c{
+     border:10px solid rgba(26, 26, 26, 0.507);
+     width:80px;
+     height:80px;
+     border-left:10px solid rgba(0,0,0,0);
+     border-top:10px solid rgba(0,0,0,0);
+     border-bottom:10px solid rgba(0,0,0,0);
+     border-radius:100%;
+     animation: spin-anti 2s linear infinite;
+   }
+   .body_loader .logo-container:hover .outer_c, .body_loader .wrap_c:hover .outer_c{
+     animation: spin-anti 2s linear infinite;
+   }
+   
+   @keyframes spin-anti {
+     0% { transform: rotate(360deg); }
+     100% { transform: rotate(0deg); }
+   }
+   @keyframes spin-anti-close {
+     0% { transform: rotate(0deg); }
+     100% { transform: rotate(360deg); }
+   }
+   .body_loader .inner_c{
+     border-right:10px solid rgba(0,0,0,0);
+     width:40px;
+     height:40px;
+     border-left:10px solid rgb(26, 26, 26);
+     border-top:10px solid rgb(26, 26, 26);
+     border-bottom:10px solid rgb(26, 26, 26);
+     border-radius:100%;
+     position:absolute;
+     animation: spin 1s linear infinite;
+   }
+   .body_loader .logo-container:hover .inner_c,.body_loader .wrap_c:hover .inner_c{
+     animation: spin 1s linear infinite;
+   }
+   
+   @keyframes spin {
+     0% { transform: rotate(0deg); }
+     100% { transform: rotate(360deg); }
+   }
+   @keyframes spin-close {
+     0% { transform: rotate(360deg); }
+     100% { transform: rotate(0deg); }
+   }
+   /* logo */

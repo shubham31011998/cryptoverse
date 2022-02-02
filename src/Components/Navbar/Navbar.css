@@ -37,7 +37,7 @@
     /* animation: spin-anti-close 3s; */
   }
   .logo-container:hover .outer_c, .wrap_c:hover .outer_c{
-    animation: spin-anti 10s linear infinite;
+    animation: spin-anti 2s linear infinite;
   }
   
   @keyframes spin-anti {
@@ -60,7 +60,7 @@
     /* animation: spin-close 2s; */
   }
   .logo-container:hover .inner_c, .wrap_c:hover .inner_c{
-    animation: spin 4s linear infinite;
+    animation: spin 1s linear infinite;
   }
   
   @keyframes spin {
