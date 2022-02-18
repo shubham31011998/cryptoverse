@@ -1,6 +1,7 @@
 {
   "name": "cryptoverse",
   "version": "0.1.0",
+  "proxy":"http://localhost:3000",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
