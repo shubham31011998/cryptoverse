@@ -63,8 +63,8 @@ const CryptoDetails = () => {
               {time.map((date)=><Option key={date}>{date}</Option>)}
             </Select>
             <LineChart coinHistory={coinHistory} currentPrice={millify(cryptoDetails.price)} coinName={cryptoDetails.name}  />
-            <Col className='stats-container'>
-              <Col className='coin-value-statistics'>
+            <Col className='stats-container' >
+              <Col className='coin-value-statistics'span={6}>
                 <Col className='coin-value-statictics-heading'>
                   <Title level={3} className="coin-details-heading">
                     {cryptoDetails.name} Value Statistics
@@ -83,7 +83,7 @@ const CryptoDetails = () => {
                   </Col>
                 ))}
               </Col>
-              <Col className='other-stats-info'>
+              <Col className='other-stats-info' span={6}>
                 <Col className='coin-value-statictics-heading'>
                   <Title level={3} className="coin-details-heading">
                     Other Statistics

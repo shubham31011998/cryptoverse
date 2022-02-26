@@ -4,6 +4,7 @@ import { Typography, Row, Col, Card, Input } from 'antd';
 import { Link } from 'react-router-dom';
 import { useGetCryptosQuery } from './Services/CryptoApi';
 import  Loader  from './Loader/Loader';
+ import "../App.css"
 
 const Cryptocurrencies = ({simplified}) => {
   const count = simplified ? 10 : 100;
@@ -36,6 +37,7 @@ const Cryptocurrencies = ({simplified}) => {
               title={`${currency.rank} - ${currency.name}`}
               extra={<img className='crypto-image' src={`${currency.iconUrl}`}/>}
               hoverable
+              className='currency-card'
               >
                 <p>Price: {millify(currency.price)}</p>
                 <p>Market Cap: {millify(currency.marketCap)}</p>
